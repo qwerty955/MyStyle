@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            width: 100%;
+            height: 100vh;
+            background-blend-mode: multiply;
+            background: rgba(139, 232, 255, 0.705) url("https://i.pinimg.com/originals/5a/df/1b/5adf1b97742a65d0a3c98299c545570b.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            width: 30px;
+            height: 10px;
+            border-radius: 100px;
+            background: rgb(158, 158, 158);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .y{
+            width: 30px;
+            height: 30px;
+            background: rgba(34, 93, 255, 0);
+            top: 10px;
+            left: 95%;
+            transform: translate(-50%,-50%);
+            font-size: 40px;
+            color: aliceblue;
+        }
+        .y:hover{
+            background: rgba(0, 0, 0, 0);
+        }
+        span:nth-child(4){
+            top: 70%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+        }
+        span:nth-child(2){
+            top:70%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        span:nth-child(3){
+            top: 70%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+        }
+        span:hover{
+            transition: 300ms;
+            background: rgb(56, 56, 56);
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .m{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            text-align: center;
+            background: rgba(105, 140, 255, 0.356);
+            height: 50px;
+            border-radius: 20px;
+            font-size: 40px;
+            color: aliceblue;
+            
+        }
+        .l{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background: rgba(34, 93, 255, 0.596);
+            z-index: 99;
+            transition: all 1.5s;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            font-size: 7vh;
+        }
+        h1{
+            position: absolute;
+            font-size: 50px;
+            color: aliceblue;
+        }
+        ul{
+            list-style: none;
+        }
+        @media (min-width: 500px) {
+            h1{
+                position: absolute;
+                font-size: 100px;
+                color: aliceblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head" id="head">
+    <img src="https://i.pinimg.com/originals/5a/df/1b/5adf1b97742a65d0a3c98299c545570b.jpg" alt="1" id="img">
+    <H1>EFFECTS</H1>
+        <div class="m" id="m">=</div>
+        <div class="l" id="l">
+            <span class="y" id="y"></span>
+            <ul>
+                <li><a href="index.html" target="_blanck">Scroll</a></li>
+                <li><a href="index2.html" target="_blanck">Night</a></li>
+                <li><a href="index3.html" target="_blanck">Carts</a></li>
+            </ul>
+        </div>
+    </div>
+    <span class="span1" id="1"></span>
+    <span class="span2" id="2"></span>
+    <span class="span3" id="3"></span>
+    <script type="text/javaScript">
+        for (let i = 1; i < 4; i++) {
+            document.getElementById(i).addEventListener("click",ev=>{
+                if (ev.target.id=="1") {
+                    document.getElementById("img").setAttribute("src","https://i.pinimg.com/originals/5a/df/1b/5adf1b97742a65d0a3c98299c545570b.jpg")
+                    document.getElementById("head").style.background="url('https://i.pinimg.com/originals/5a/df/1b/5adf1b97742a65d0a3c98299c545570b.jpg')";
+                    document.getElementById("head").style.backgroundRepeat="no-repeat";
+                    document.getElementById("head").style.backgroundSize="cover";
+                    document.getElementById(2).style.background="rgb(158, 158, 158)";
+                    document.getElementById(3).style.background="rgb(158, 158, 158)";
+                    ev.target.style.background="black";
+                }else if (ev.target.id=="2"){
+                    document.getElementById("img").setAttribute("src","https://avatars.mds.yandex.net/get-zen_doc/3957666/pub_5f6f674bdf292d1109c9db60_5f6f6790df292d1109ca4151/scale_1200")  
+                    document.getElementById("head").style.background="url('https://avatars.mds.yandex.net/get-zen_doc/3957666/pub_5f6f674bdf292d1109c9db60_5f6f6790df292d1109ca4151/scale_1200')";
+                    document.getElementById("head").style.backgroundRepeat="no-repeat";
+                    document.getElementById("head").style.backgroundSize="cover";
+                    document.getElementById(1).style.background="rgb(158, 158, 158)";
+                    document.getElementById(3).style.background="rgb(158, 158, 158)";
+                    ev.target.style.background="black";
+                }else if (ev.target.id=="3"){
+                    document.getElementById("img").setAttribute("src","https://klike.net/uploads/posts/2019-06/1560664160_4.jpg")  
+                    document.getElementById("head").style.background="url('https://klike.net/uploads/posts/2019-06/1560664160_4.jpg')";
+                    document.getElementById("head").style.backgroundRepeat="no-repeat";
+                    document.getElementById("head").style.backgroundSize="cover";
+                    document.getElementById(1).style.background="rgb(158, 158, 158)";
+                    document.getElementById(2).style.background="rgb(158, 158, 158)";
+                    ev.target.style.background="black";
+                }
+            })
+        }
+        document.getElementById("l").style.left="-100%";
+        let t = document.createTextNode("\u00D7");
+        document.getElementById("y").append(t);
+        document.getElementById("m").onclick=function () {
+            document.getElementById("l").style.left="0%";
+        }
+        document.getElementById("y").onclick=function () {
+            document.getElementById("l").style.left="-100%"; 
+        }
+    </script>
+</body>
+</html>

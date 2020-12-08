@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: inline-flex;
+            background: rgb(100, 100, 100);
+        }
+        div{
+            width: 200px;
+            height: 300px;
+            background: rgb(243, 239, 183) ;
+            margin: 20px;
+            margin-top: 50px;
+            overflow: hidden;
+            border-radius: 50px;
+            background-blend-mode: multiply;
+        }
+        div>div{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 90px;
+            border-radius: 0%;
+            color: aliceblue;
+            margin-top: 65px;
+            background: rgba(0, 0, 0, 0.699);
+            padding:10px;
+            overflow: hidden;
+            transform: rotateX(270deg);
+        }
+        div:hover .f{
+            transition: 1s;
+            transform: rotateX(360deg);
+        }
+        h1{
+            width: 100%;
+            background: rgba(0, 0, 0, 0.836);
+            color: aliceblue;
+            text-align: center;
+        }
+        .h{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">HOVER EFFECT</h1>
+    <div class="imgBG1" id="imgBG1">
+        <h1 class="titleBG1" id="titleBg1">TITLE1</h1>
+        <div class="f">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque assumenda reprehenderit, quasi ...</p>
+        </div>
+    </div>
+    <div class="imgBG2" id="imgBG2">
+        <h1 class="titleBG2" id="titleBg2">TITLE2</h1>
+        <div class="f">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque assumenda reprehenderit, quasi ...</p>
+        </div>
+    </div>
+    <div class="imgBG3" id="imgBG3">
+        <h1 class="titleBG3" id="titleBg3">TITLE3</h1>
+        <div class="f">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque assumenda reprehenderit, quasi ...</p>
+        </div>
+    </div>
+    <div class="imgBG4" id="imgBG4">
+        <h1 class="titleBG4" id="titleBg4">TITLE4</h1>
+        <div class="f">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque assumenda reprehenderit, quasi ...</p>
+        </div>
+    </div>
+    <div class="imgBG5" id="imgBG5">
+        <h1 class="titleBG5" id="titleBg5">TITLE5</h1>
+        <div class="f">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eaque assumenda reprehenderit, quasi ...</p>
+        </div>
+    </div>
+</body>
+</html>
